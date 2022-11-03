@@ -19,9 +19,9 @@ const Dropdown = (props) => {
           <i className="fa fa-caret-down"></i>
         </button>
         <div className="dropdown-content" id="myDropdown" style={{ display:state?"block" : "none"}}>
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="#" className="dropdown-link">Link 1</a>
+          <a href="#" className="dropdown-link">Link 2</a>
+          <a href="#" className="dropdown-link">Link 3</a>
         </div>
       </div>
     </div>

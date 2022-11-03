@@ -6,14 +6,23 @@
 
 .navbar{
   display: flex;
-  /* background-color: red; */
+  background-color: white;
   border-bottom: 1px solid black;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
 }
 
 .logo{
   flex: 1;
   padding:36px 18px;
   font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.logo:hover{
+  cursor: pointer;
 }
 .menu{
   display: flex;
@@ -27,11 +36,17 @@
 .sub-menu{
   padding: 36px 18px;
   margin-left: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+
+}
+
+.sub-menu:hover{
+  cursor: pointer;
 }
 
 .btn {
-  background: #3498db;
+  background:  #8D72E1;
   border-radius: 6px;
   font-family: Arial;
   color: #ffffff;
@@ -45,3 +60,12 @@
   background: #3cb0fd;
   text-decoration: none;
 }
+
+/* .navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+} */

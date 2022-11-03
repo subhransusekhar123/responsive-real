@@ -1,8 +1,9 @@
-.card-container{
+.liked_main{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap:1rem;
   width: 80vw;
   margin: auto;
-  padding-bottom: 6rem;
+  margin-top: 9rem;
+  margin-bottom: 5rem;
 }

@@ -17,12 +17,12 @@ const CardContainer = () => {
           filtered_data.length === 0 ? 
           data.map((data)=>{
             return (
-              <Card/>
+              <Card data={data}/>
             )
           }):
           filtered_data.map((data)=>{
             return (
-              <Card/>
+              <Card data={data}/>
             )
           })
         }
