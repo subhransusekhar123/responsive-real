@@ -1,0 +1,50 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  border: 1px solid black;
+  max-width:500px;
+  background-color: white;
+}
+
+img{
+  border-top-left-radius: 1rem;
+  border-top-right-radius:1rem;
+  object-fit:contain
+}
+
+.card-price{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem .5rem;
+}
+
+.card-features{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem .5rem ;
+  font-size: 1.3rem;
+}
+
+.card-dollar span{
+  color: blue;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.card-like{
+  border-radius: 50%;
+  width: 2.7rem;
+  height: 2.7rem;
+  padding:.5rem;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body{
+  border-bottom: 1px solid black;
+  line-height: 2.2rem;
+  padding:0 1rem 1rem .5rem;
+}
