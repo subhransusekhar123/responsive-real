@@ -3,15 +3,22 @@
   flex-direction: column;
   border-radius: 1rem;
   border: 1px solid black;
-  max-width:500px;
+  max-width:400px;
   background-color: white;
+  object-fit: cover;
 }
 
 img{
   border-top-left-radius: 1rem;
   border-top-right-radius:1rem;
-  object-fit:contain
+  object-fit:cover;
 }
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 
 .card-price{
   display: flex;
@@ -47,4 +54,56 @@ img{
   border-bottom: 1px solid black;
   line-height: 2.2rem;
   padding:0 1rem 1rem .5rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    border: 1px solid black;
+    max-width:350px;
+    background-color: white;
+    object-fit: cover;
+  }
+  
+}
+
+@media screen and (max-width: 1200px) {
+  .card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    border: 1px solid black;
+    max-width:300px;
+    background-color: white;
+    object-fit: cover;
+  }
+  
+}
+
+@media screen and (max-width: 1024px) {
+  .card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    border: 1px solid black;
+    max-width:400px;
+    background-color: white;
+    object-fit: cover;
+  }
+  
+}
+
+@media screen and (max-width: 412px) {
+  .card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    border: 1px solid black;
+    max-width:400px;
+    background-color: white;
+    object-fit: cover;
+  }
+  
 }

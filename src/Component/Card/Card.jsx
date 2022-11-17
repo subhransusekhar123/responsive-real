@@ -21,7 +21,7 @@ const Card = ({data}) => {
   }
   return (
     <div className='card'>
-      <img src="https://www.eroshotels.co.in/wp-content/uploads/2018/04/606x368.jpg" alt="Italian Trulli"/>
+      <img className='resoponsive' src="https://www.eroshotels.co.in/wp-content/uploads/2018/04/606x368.jpg" alt="Italian Trulli"/>
       <div className="card-price">
         <div className='card-dollar'>
         <span>${data?.price}</span>/month
