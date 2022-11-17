@@ -59,3 +59,20 @@
   background: #3cb0fd;
   text-decoration: none;
 }
+
+@media screen and (max-width: 460px) {
+  .search-box{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    border-radius: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    border: 1px solid white;
+    background-color: white;
+    margin:4rem 0 1rem 0 ;
+    
+  }
+  
+}
+
+

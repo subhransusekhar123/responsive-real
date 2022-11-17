@@ -75,7 +75,7 @@ img{
     flex-direction: column;
     border-radius: 1rem;
     border: 1px solid black;
-    max-width:300px;
+    max-width:290px;
     background-color: white;
     object-fit: cover;
   }
@@ -95,15 +95,43 @@ img{
   
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 413px) {
   .card{
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
     border: 1px solid black;
-    max-width:400px;
+    width: 300px;
     background-color: white;
-    object-fit: cover;
+    margin: auto;
   }
   
+}
+
+
+
+@media screen and (max-width: 769px) {
+  .card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    border: 1px solid black;
+    max-width:300px;
+    background-color: white;
+    object-fit: cover;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 913px) {
+  .card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    border: 1px solid black;
+    max-width:350px;
+    background-color: white;
+    object-fit: cover;
+    margin: auto;
+  }
 }

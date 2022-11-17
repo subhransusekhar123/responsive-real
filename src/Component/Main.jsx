@@ -7,7 +7,7 @@ import SecondSec from './SecondSec/SecondSec'
 const Main = () => {
   return (
     <div className='main'>
-      <SecondSec/>
+      {/* <SecondSec/> */}
       <Search/>
       <CardContainer/>
 

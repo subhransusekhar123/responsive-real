@@ -1,37 +1,40 @@
 import React from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Dropdown from "../Dropdown/Dropdown";
 import "./Navbar.css";
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const [toggle,setToggle ] = useState(false);
+
+
+  const clickHandler = () => {
+    toggle ? setToggle(false) : setToggle(true)
+  }
+
+
   return (
-    <div className="navbar">
-      
-      <div className="logo" onClick={()=>navigate("/")}>Estary</div>
-      
-      <div className="menu">
-        <div className="sub-menu">Rent</div>
-        <div className="sub-menu">Buy</div>
-        <div className="sub-menu">sell</div>
-         
-        <div className="sub-menu">
-            <Dropdown data="manageProperty"/>
+
+
+      <nav class="navbar">
+        <div class="brand-title">Realtor</div>
+        <a href="#" className={`toggle-button `}>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div className={`navbar-links ${toggle ? "active":""}`}>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
-        <div className="sub-menu">
-          <Dropdown data = "resourses"/>
-        </div>
-        <div className="sub-menu" onClick={()=>navigate("/liked")}>
-       
-        <i class="fa fa-bag-shopping"></i>
-        fav
-        </div>
-      </div>
-      <div className="auth">
-        <button className="btn">Login</button>
-        <button className="btn">Sign up</button>
-      </div>
-    </div>
+        </nav>
+
+
+
   );
 };
 
