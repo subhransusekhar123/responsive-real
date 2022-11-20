@@ -3,7 +3,7 @@
   flex-direction: column;
   border-radius: 1rem;
   border: 1px solid black;
-  max-width:400px;
+  width: 100%;
   background-color: white;
   object-fit: cover;
 }

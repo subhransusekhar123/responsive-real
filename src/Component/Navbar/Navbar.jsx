@@ -11,6 +11,8 @@ const Navbar = () => {
 
   const clickHandler = () => {
     toggle ? setToggle(false) : setToggle(true)
+
+    console.log(toggle);
   }
 
 
@@ -19,18 +21,24 @@ const Navbar = () => {
 
       <nav class="navbar">
         <div class="brand-title">Realtor</div>
-        <a href="#" className={`toggle-button `}>
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div className={`navbar-links ${toggle ? "active":""}`}>
+       <div className="toggle-button" onClick={clickHandler}>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+
+       </div>
+       
+        <div className={`navbar-links ${toggle? "margin-right" : ""}`}>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
+        <div className="close" onClick={clickHandler}>
+          <h1 >x</h1>
         </div>
+        </div>
+
         </nav>
 
 
