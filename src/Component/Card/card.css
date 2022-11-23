@@ -6,6 +6,8 @@
   width: 100%;
   background-color: white;
   object-fit: cover;
+  overflow-x:hidden;
+  overflow-y: hidden;
 }
 
 img{
@@ -14,9 +16,18 @@ img{
   object-fit:cover;
 }
 
+img:hover{
+  width: 100%;
+  transform: scale(1.2);
+  object-fit: cover;
+
+
+}
+
+
+
 .responsive {
   width: 100%;
-  height: auto;
 }
 
 
@@ -56,82 +67,4 @@ img{
   padding:0 1rem 1rem .5rem;
 }
 
-@media screen and (max-width: 1400px) {
-  .card{
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
-    border: 1px solid black;
-    max-width:350px;
-    background-color: white;
-    object-fit: cover;
-  }
-  
-}
 
-@media screen and (max-width: 1200px) {
-  .card{
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
-    border: 1px solid black;
-    max-width:290px;
-    background-color: white;
-    object-fit: cover;
-  }
-  
-}
-
-@media screen and (max-width: 1024px) {
-  .card{
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
-    border: 1px solid black;
-    max-width:400px;
-    background-color: white;
-    object-fit: cover;
-  }
-  
-}
-
-@media screen and (max-width: 413px) {
-  .card{
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
-    border: 1px solid black;
-    width: 300px;
-    background-color: white;
-    margin: auto;
-  }
-  
-}
-
-
-
-@media screen and (max-width: 769px) {
-  .card{
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
-    border: 1px solid black;
-    max-width:300px;
-    background-color: white;
-    object-fit: cover;
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 913px) {
-  .card{
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
-    border: 1px solid black;
-    max-width:350px;
-    background-color: white;
-    object-fit: cover;
-    margin: auto;
-  }
-}

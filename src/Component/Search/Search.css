@@ -60,11 +60,10 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 560px) {
   .search-box{
     display: flex;
     flex-direction: column;
-    /* background-color: red; */
     border-radius: 1rem;
     padding: 1rem 1rem 1rem 1rem;
     border: 1px solid white;
