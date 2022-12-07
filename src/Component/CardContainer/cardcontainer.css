@@ -1,4 +1,5 @@
 .card-container{
+  margin-top:6rem;
   width: 80vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

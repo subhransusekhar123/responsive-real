@@ -8,7 +8,7 @@ const Liked = () => {
   let liked_data = useSelector((data)=>data.liked_data);
   console.log(liked_data)
   return (
-    <div className='liked_main'>
+    <div className='card-container'>
       {
         liked_data.map((ele)=>{
           return <Card data={ele}/>

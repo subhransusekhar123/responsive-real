@@ -25,14 +25,14 @@ const Navbar = () => {
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
-
        </div>
        
         <div className={`navbar-links ${toggle? "margin-right" : ""}`}>
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="#" onClick={()=>navigate("/")}>Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
+            <li onClick={()=>navigate("/liked")}><a href="#">like</a></li>
           </ul>
         <div className="close" onClick={clickHandler}>
           <h1 >x</h1>
